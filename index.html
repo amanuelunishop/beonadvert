@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Beon — Order Management</title>
+<title>Amanu — Order Management</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -277,7 +277,7 @@
 
 <!-- LOADING -->
 <div id="loading" class="screen active">
-  <div class="loading-logo">beon</div>
+  <div class="loading-logo">amanu</div>
   <div class="loading-bar-wrap"><div class="loading-bar"></div></div>
   <div class="loading-status" id="loading-status">Connecting to database…</div>
 </div>
@@ -287,7 +287,7 @@
   <div class="login-bg"></div>
   <div class="login-card">
     <div class="login-logo">
-      <div class="wordmark">beon</div>
+      <div class="wordmark">amanu</div>
       <div class="tagline">Order Management System</div>
     </div>
     <div class="login-form-box">
@@ -311,7 +311,7 @@
 <!-- APP -->
 <div id="app" class="screen">
   <div class="topbar">
-    <div class="topbar-logo">beon</div>
+    <div class="topbar-logo">amanu</div>
     <div class="topbar-sep"></div>
     <span class="topbar-role-badge" id="topbar-role-badge">—</span>
     <span class="topbar-user" id="topbar-user">—</span>
@@ -726,7 +726,7 @@ function renderUsers(el){
         <div class="ui-dept"><span class="badge badge-${d.role==='owner'?'new':d.role==='receptor'?'pending':d.role}">${d.role}</span></div>
       </div>
       <div style="font-size:12px;color:var(--text3);flex:1">${roleDesc(d.role)}</div>
-      ${u!=='owner@beon.com'?`<button class="btn-danger" style="flex:none;padding:8px 14px;font-size:12px" onclick="deleteUser('${u}')">Delete</button>`:''}
+      ${u!=='owner@amanu.com'?`<button class="btn-danger" style="flex:none;padding:8px 14px;font-size:12px" onclick="deleteUser('${u}')">Delete</button>`:''}
     </div>`).join('')}
     </div>
   </div>`;
